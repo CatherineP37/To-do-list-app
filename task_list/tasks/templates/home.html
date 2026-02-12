@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.title }}
+        <button type="submit" class="form-button">ADD TASK</button>
+    </form>
+    {% for task in tasks %}
+        <div class="task">
+            <div class="image-and-title">
+                {% if task.done %}
+                    <img src="{% static 'ticked.svg' %}">
+                {% else %}
+                    <img src="{% static 'unticked.svg' %}">
+                {% endif %}
+                <p>{{ task.title }}</p>
+            </div>            
+            <div class="buttons">
+                <a href="{% url 'edit' task.id %}"><button type="submit" class="edit-button">MARK AS DONE</button></a>
+                <a href="{% url 'delete' task.id %}"><button type="submit" class="delete-button">DELETE</button></a>
+            </div>            
+        </div>
+    {% endfor %}
+{% endblock %}

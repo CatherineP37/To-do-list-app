@@ -20,7 +20,7 @@ main {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
 }
 
 h1 {
@@ -30,6 +30,16 @@ h1 {
 
 h1, p {
     color: #3C3C3C;
+}
+
+/* Tasks container */
+
+.tasks {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 
@@ -64,7 +74,7 @@ h1, p {
 }
 
 .edit-button {
-    background-color: #5A94FF;    
+    background-color: #5A94FF;
 }
 
 .edit-button:hover {

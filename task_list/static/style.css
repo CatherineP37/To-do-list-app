@@ -18,10 +18,14 @@ main {
     padding: 2rem;
     margin: 120px auto 0 auto;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 h1 {
     line-height: 1;
+    text-align: center;
 }
 
 h1, p {
@@ -33,7 +37,7 @@ h1, p {
 
 .task {
     background-color: #FFFFFF;
-    margin: 16px 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;

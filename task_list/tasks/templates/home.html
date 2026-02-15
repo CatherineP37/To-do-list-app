@@ -1,11 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <form method="POST" action="">
-        {% csrf_token %}
-        {{ form.title }}
-        <button type="submit" class="form-button">ADD TASK</button>
-    </form>
+    <main>
+        <div class="form-container">
+            <h1>To-do list app</h1>
+            <form method="POST" action="">
+                {% csrf_token %}
+                {{ form.title }}
+                <button type="submit" class="form-button">ADD TASK</button>
+            </form>
+
+        </div>
+        
     <div class="tasks">
         {% for task in tasks %}
         <div class="task">
@@ -25,5 +31,8 @@
     {% endfor %}
 
     </div>
+
+    </main>
+    
     
 {% endblock %}

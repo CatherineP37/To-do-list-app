@@ -7,11 +7,8 @@
         <title>{% block title %}To-do list{% endblock %}</title>        
         <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
-    <body>        
-        <main>
-            <h1>To-do list</h1>
-            {% block content %}
-            {% endblock %}
-        </main>        
+    <body>      
+        {% block content %}
+        {% endblock %}            
     </body>
 </html>

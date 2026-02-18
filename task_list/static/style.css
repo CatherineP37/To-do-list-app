@@ -140,8 +140,7 @@ form input {
     background-color: #23163E;
 }
 
-.edit-button, .delete-button {
-    display: inline-block;
+.edit-button, .delete-button {    
     text-decoration: none;
     color: #FFFFFF;    
     border-radius: 8px;    
@@ -204,15 +203,21 @@ form input {
 
     /* Buttons */
 
-    .buttons {
-        width: 40%;
-        justify-content: space-between;
-        gap: 1rem;        
+    .buttons {        
+        width: 45%;
+        gap: 1rem;
+        justify-content: space-between;              
+    }
+
+    .buttons > * {        
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;        
     }
 
     .edit-button, .delete-button {
-        padding: 16px 2rem;
-        display: inline-block;          
+        padding: 16px 0;
+        width: 100%;               
     }
 }
 

@@ -4,16 +4,18 @@
 	margin: 0;
     padding: 0;
     border: none;
-    box-sizing: border-box;	
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Inter", sans-serif; 
-    background-color: #FFFFFF;    
+    background-color: #7C43E5;
+    background-image: radial-gradient(#A83BCE, #7C43E5);  
 }
 
 main {
-    background-color: #CFE1E7;
+    background-color: #361C68;
+    background-image: linear-gradient(#241244, #361C68);     
     width: 70%;
     padding: 2rem;
     margin: 120px auto 0 auto;
@@ -25,34 +27,26 @@ main {
 
 h1 {
     line-height: 1;
-    text-align: left;
+    text-align: left;   
 }
 
 h1, p {
-    color: #3C3C3C;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    color: #FFFFFF;
 }
 
 /* Tasks container */
 
 .tasks {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-
 /* Task container */
 
 .task {
-    background-color: #FFFFFF;
+    background-color: #5B389D;
+    background-image: linear-gradient(#5B389D, #623EA7);
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -80,20 +74,24 @@ h1, p {
 }
 
 .edit-button {
-    background-color: #5A94FF;
+    background-color: #7C43E5;
+    background-image: linear-gradient(#A83BCE, #7C43E5); 
+    border: 2px solid #E048FF;
 }
 
 .edit-button:hover {
-    background-color: #4E83E5;
+    background-color: #23163E;
+    background-image: linear-gradient(#23163E, #000000);
 }
 
 .delete-button {
-    background-color: #E64744;
+    background-color: #5B389D;
+    border: 2px solid #FFFFFF;
     margin-left: 0.5rem;
 }
 
 .delete-button:hover {
-    background-color: #CD4745;
+    background-color: #23163E;
 }
 
 .edit-button, .delete-button {
@@ -116,6 +114,9 @@ form input {
     width: 77%;
     padding: 16px 0.5rem;
     border-radius: 8px;
+    background-color: #5B389D;
+    background-image: linear-gradient(#5B389D, #623EA7);
+    border: 2px solid #7C43E5;   
 }
 
 .form-button {
@@ -127,9 +128,12 @@ form input {
     text-decoration: none;
     color: #FFFFFF;    
     border-radius: 8px;
-    background-color: #5A94FF;
+    background-color: #7C43E5;
+    background-image: linear-gradient(#A83BCE, #7C43E5);
+    border: 2px solid #E048FF;
 }
 
 .form-button:hover {
-    background-color: #4E83E5;
+    background-color: #23163E;
+    background-image: linear-gradient(#23163E, #000000);
 }

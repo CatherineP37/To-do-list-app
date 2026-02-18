@@ -8,17 +8,17 @@
 }
 
 body {
-    font-family: "Inter", sans-serif; 
+    font-family: "Inter", sans-serif;   
     background-color: #7C43E5;
     background-image: radial-gradient(#A83BCE, #7C43E5);  
 }
 
 main {
     background-color: #361C68;
-    background-image: linear-gradient(#241244, #361C68);     
-    width: 70%;
-    padding: 2rem;
-    margin: 120px auto 0 auto;
+    margin: 16px auto 0 auto;
+    background-image: linear-gradient(#241244, #361C68);
+    width: 90%;    
+    padding: 2rem;    
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,44 @@ h1, p {
     color: #FFFFFF;
 }
 
+/* Form */
+
+form {    
+    padding: 0;
+    margin: 16px 0 0 0;    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;          
+}
+
+form input {
+    width: 100%;
+    padding: 16px 0.5rem;
+    border-radius: 8px;
+    background-color: #5B389D;
+    color: #FFFFFF;
+    background-image: linear-gradient(#5B389D, #623EA7);
+    border: 2px solid #7C43E5;   
+}
+
+.form-button {
+    display: inline;    
+    width: 100%;
+    padding: 16px 0;
+    margin: 0;
+    text-decoration: none;
+    color: #FFFFFF;    
+    border-radius: 8px;
+    background-color: #7C43E5;
+    background-image: linear-gradient(#A83BCE, #7C43E5);
+    border: 2px solid #E048FF;
+}
+
+.form-button:hover {
+    background-color: #23163E;
+    background-image: linear-gradient(#23163E, #000000);
+}
+
 /* Tasks container */
 
 .tasks {
@@ -42,13 +80,16 @@ h1, p {
     gap: 16px;
 }
 
-/* Task container */
+/* Task */
 
 .task {
     background-color: #5B389D;
     background-image: linear-gradient(#5B389D, #623EA7);
     margin: 0;
     display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
@@ -62,15 +103,21 @@ h1, p {
 }
 
 .image-and-title {
-    width: 20%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;   
 }
 
 /* Buttons */
 
+.buttons {
+    width: 100%;  
+    display: flex;    
+    justify-content: space-between;    
+}
+
 .edit-button, .delete-button {
-    padding: 16px 2rem;
+    padding: 12px 2rem;       
 }
 
 .edit-button {
@@ -86,8 +133,7 @@ h1, p {
 
 .delete-button {
     background-color: #5B389D;
-    border: 2px solid #FFFFFF;
-    margin-left: 0.5rem;
+    border: 2px solid #FFFFFF;   
 }
 
 .delete-button:hover {
@@ -101,40 +147,79 @@ h1, p {
     border-radius: 8px;    
 }
 
-/* Form */
 
-form {    
-    padding: 0;
-    margin: 16px 0 0 0;    
-    display: flex;
-    justify-content: space-between;      
+
+@media screen and (min-width: 576px) {
+
+    main {
+        margin: 24px auto 0 auto;
+    }
+
+    .buttons {          
+        justify-content: flex-start;
+        gap: 1rem;         
+    }
 }
 
-form input {
-    width: 77%;
-    padding: 16px 0.5rem;
-    border-radius: 8px;
-    background-color: #5B389D;
-    color: #FFFFFF;
-    background-image: linear-gradient(#5B389D, #623EA7);
-    border: 2px solid #7C43E5;   
+@media screen and (min-width: 768px) {
+    /* Main */
+
+    main {
+        width: 80%;
+        margin: 32px auto 0 auto;
+    }
+   
 }
 
-.form-button {
-    display: inline;
-    margin: 0 0 0 50px;
-    width: 22%;
-    padding: 16px 0;
-    margin: 0;
-    text-decoration: none;
-    color: #FFFFFF;    
-    border-radius: 8px;
-    background-color: #7C43E5;
-    background-image: linear-gradient(#A83BCE, #7C43E5);
-    border: 2px solid #E048FF;
+@media screen and (min-width: 992px) {
+
+    main {
+        width: 70%;
+        margin: 72px auto 0 auto;
+    }
+
+     /* Form */
+
+    form {        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+    }
+
+    .form-button {      
+        width: 30%;    
+    }
+
+    /* Task */
+
+    .task {       
+        flex-direction: row;       
+        justify-content: space-between;       
+    }
+
+    .image-and-title {
+        width: 50%;    
+        
+    }
+
+    /* Buttons */
+
+    .buttons {
+        width: 40%;
+        justify-content: space-between;
+        gap: 1rem;        
+    }
+
+    .edit-button, .delete-button {
+        padding: 16px 2rem;
+        display: inline-block;          
+    }
 }
 
-.form-button:hover {
-    background-color: #23163E;
-    background-image: linear-gradient(#23163E, #000000);
+@media screen and (min-width: 1200px) {
+    main {
+        margin: 120px auto 0 auto;        
+        max-width: 1000px;
+    }
 }
+

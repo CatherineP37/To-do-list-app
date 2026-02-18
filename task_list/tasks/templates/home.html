@@ -3,7 +3,7 @@
 {% block content %}
     <main>
         <div class="form-container">
-            <h1>To-do list app</h1>
+            <h1>To-do list</h1>
             <form method="POST" action="">
                 {% csrf_token %}
                 {{ form.title }}
@@ -24,7 +24,7 @@
                 <p>{{ task.title }}</p>
             </div>            
             <div class="buttons">
-                <a href="{% url 'edit' task.id %}"><button type="submit" class="edit-button">MARK AS DONE</button></a>
+                <a href="{% url 'edit' task.id %}"><button type="submit" class="edit-button">{% if task.done %}MARK AS NOT DONE{% else %}MARK AS DONE{% endif %}</button></a>
                 <a href="{% url 'delete' task.id %}"><button type="submit" class="delete-button">DELETE</button></a>
             </div>            
         </div>

@@ -22,6 +22,11 @@ This is a to-do list app with full CRUD functionality. Users can add tasks, mark
 
 ## Scope
 
+- The user has the ability to add tasks to the database
+- The user has the ability to view the tasks they've saved to the database
+- The user has the ability to mark tasks as done
+- The user has the ability to delete tasks from the database
+
 ## User research
 
 ## User stories

@@ -48,6 +48,11 @@ For the qualitative research, I interviewed people who had experience with manag
 
 ## Features
 
+- The user can add tasks to the database
+- The user can view their tasks
+- The user can mark tasks as done
+- The user can delete tasks from the list
+  
 ## Testing
 
 ## Build

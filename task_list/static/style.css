@@ -48,10 +48,13 @@ form input {
     width: 100%;
     padding: 16px 0.5rem;
     border-radius: 8px;
-    background-color: #5B389D;
-    color: #FFFFFF;
-    background-image: linear-gradient(#5B389D, #623EA7);
+    background-color: #442A74;
+    color: #FFFFFF;    
     border: 2px solid #7C43E5;   
+}
+
+form input:hover {
+    border: 2px solid #FFFFFF;
 }
 
 .form-button {
@@ -197,8 +200,7 @@ form input {
     }
 
     .image-and-title {
-        width: 50%;    
-        
+        width: 50%;        
     }
 
     /* Buttons */

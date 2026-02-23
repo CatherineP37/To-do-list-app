@@ -10,12 +10,12 @@
 body {
     font-family: "Inter", sans-serif;   
     background-color: #7C43E5;
-    background-image: radial-gradient(#A83BCE, #7C43E5);  
+    background-image: radial-gradient(#A83BCE, #7C43E5);   
 }
 
 main {
     background-color: #361C68;
-    margin: 24px auto 0 auto;
+    margin: 16px auto;
     background-image: linear-gradient(#241244, #361C68);
     width: 95%;    
     padding: 1rem;    
@@ -159,7 +159,8 @@ form input::placeholder {
 @media screen and (min-width: 576px) {
 
     main {
-        margin: 32px auto 0 auto;
+        margin: 32px auto 16px auto;
+        width: 90%;
         padding: 1.5rem;
     }
 
@@ -172,9 +173,8 @@ form input::placeholder {
 @media screen and (min-width: 768px) {
     /* Main */
 
-    main {
-        width: 80%;
-        margin: 40px auto 0 auto;
+    main {        
+        margin: 48px auto 0 auto;
         padding: 2rem;
     }
    
@@ -183,7 +183,7 @@ form input::placeholder {
 @media screen and (min-width: 1000px) {
 
     main {
-        width: 70%;
+        width: 80%;
         margin: 72px auto 0 auto;        
     }
 
@@ -213,7 +213,8 @@ form input::placeholder {
 
 @media screen and (min-width: 1200px) {
     main {
-        margin: 120px auto 0 auto;        
+        margin: 108px auto 0 auto;
+        width: 70%;       
         max-width: 1000px;
     }
 }

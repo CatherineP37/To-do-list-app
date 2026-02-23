@@ -8,5 +8,5 @@ class AddTask(ModelForm):
         fields = ['title']
 
         widgets = {
-            'title': forms.textInput(attrs={'placeholder':'Enter your task here'}),
+            'title': forms.TextInput(attrs={'placeholder':'Enter your task here'}),
         }

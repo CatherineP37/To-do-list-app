@@ -1,6 +1,8 @@
 # To-do-list-app
 This is a to-do list app built with HTML, CSS, Python and Django.
 
+![Prototype](task_list/static/group.webp)
+
 ## Table of contents
 
 - [Introduction](#introduction)

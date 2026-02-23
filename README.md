@@ -10,8 +10,6 @@ This is a to-do list app built with HTML, CSS, Python and Django.
 - [User research](#user-research)
 - [Features](#features)
 - [Testing](#testing)
-- [Build](#build)
-- [Deployment](#deployment)
 - [Credits](#credits)
 
 ## Introduction
@@ -50,10 +48,6 @@ For the qualitative research, I interviewed people who had experience with manag
 - The user can delete tasks from the list
   
 ## Testing
-
-## Build
-
-## Deployment
 
 ## Credits
 

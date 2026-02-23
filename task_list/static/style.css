@@ -15,10 +15,10 @@ body {
 
 main {
     background-color: #361C68;
-    margin: 16px auto 0 auto;
+    margin: 24px auto 0 auto;
     background-image: linear-gradient(#241244, #361C68);
-    width: 90%;    
-    padding: 2rem;    
+    width: 95%;    
+    padding: 1rem;    
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -95,12 +95,10 @@ form input::placeholder {
     background-color: #5B389D;
     background-image: linear-gradient(#5B389D, #623EA7);
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 16px;   
     padding: 1rem;
     border-radius: 8px;
 }
@@ -121,12 +119,15 @@ form input::placeholder {
 
 .buttons {
     width: 100%;  
-    display: flex;    
-    justify-content: space-between;    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 16px;    
 }
 
 .edit-button, .delete-button {
-    padding: 12px 2rem;       
+    padding: 12px 0;
+    width: 100%;    
 }
 
 .edit-button {
@@ -155,18 +156,17 @@ form input::placeholder {
     border-radius: 8px;    
 }
 
-
-
 @media screen and (min-width: 576px) {
 
     main {
-        margin: 24px auto 0 auto;
+        margin: 32px auto 0 auto;
+        padding: 1.5rem;
     }
 
-    .buttons {          
-        justify-content: flex-start;
-        gap: 1rem;         
+    .buttons {
+        grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -174,16 +174,17 @@ form input::placeholder {
 
     main {
         width: 80%;
-        margin: 32px auto 0 auto;
+        margin: 40px auto 0 auto;
+        padding: 2rem;
     }
    
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
 
     main {
         width: 70%;
-        margin: 72px auto 0 auto;
+        margin: 72px auto 0 auto;        
     }
 
      /* Form */
@@ -196,31 +197,17 @@ form input::placeholder {
 
     .form-button {      
         width: 30%;    
-    }
-
-    /* Task */
-
-    .task {       
-        flex-direction: row;       
-        justify-content: space-between;       
-    }
-
-    .image-and-title {
-        width: 50%;        
-    }
+    }    
 
     /* Buttons */
 
     .buttons {        
-        width: 45%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;                  
+        width: 70%;       
+        grid-template-columns: 1fr 1fr;                      
     }
 
     .edit-button, .delete-button {
-        padding: 16px 0;
-        width: 100%;               
+        padding: 16px 0;                    
     }
 }
 

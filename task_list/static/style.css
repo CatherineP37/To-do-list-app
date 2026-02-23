@@ -46,6 +46,7 @@ form {
 
 form input {
     width: 100%;
+    font-size: 1rem;
     padding: 16px 0.5rem;
     border-radius: 8px;
     background-color: #442A74;
@@ -55,6 +56,11 @@ form input {
 
 form input:hover {
     border: 2px solid #B084FF;
+}
+
+form input::placeholder {
+    color: #E1D7F5;
+    font-size: 1rem;
 }
 
 .form-button {

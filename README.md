@@ -9,7 +9,6 @@ This is a to-do list app built with HTML, CSS, Python and Django.
 - [Scope](#scope)
 - [User research](#user-research)
 - [Database schema](#database-schema)
-- [Wireframes](#wireframes)
 - [Features](#features)
 - [Testing](#testing)
 - [Build](#build)
@@ -45,8 +44,6 @@ For the qualitative research, I interviewed people who had experience with manag
 - Users want the ability to delete tasks from their to-do list app
 
 ## Database schema
-
-## Wireframes
 
 ## Features
 

@@ -13,7 +13,7 @@ This is a to-do list app built with HTML, CSS, Python and Django.
 
 ## Introduction
 
-This is a to-do list app with full CRUD functionality. Users can add tasks, mark tasks as done and delete tasks.
+This is a to-do list app where users can add tasks, mark tasks as done and delete tasks.
 
 ## Scope
 
